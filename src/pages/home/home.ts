@@ -14,12 +14,11 @@ export class HomePage {
   constructor(public navCtrl: NavController, private iab: InAppBrowser,platform: Platform) {
 platform.ready().then(() => {
 
-const browser = this.iab.create('https://touch.tube', '_self');
+//const browser = this.iab.create('https://touch.tube', '_self');
 
-   browser.show();
-        let errorSub = browser.on('loaderror').subscribe(event => {
-            console.log('loaderror', event)
-})
+  // browser.show();
+  window.open("https://touch.tube", "_self");
+      
 })
   
 }
