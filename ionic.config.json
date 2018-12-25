@@ -1,0 +1,7 @@
+{
+  "name": "ionic-in-app-browser",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
