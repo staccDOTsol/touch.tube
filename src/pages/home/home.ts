@@ -17,6 +17,9 @@ platform.ready().then(() => {
 const browser = this.iab.create('https://touch.tube', '_self');
 
    browser.show();
+        let errorSub = browser.on('loaderror').subscribe(event => {
+            console.log('loaderror', event)
+})
 })
   
 }
